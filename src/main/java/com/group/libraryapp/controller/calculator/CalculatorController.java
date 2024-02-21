@@ -1,5 +1,8 @@
 package com.group.libraryapp.controller.calculator;
 
+import com.group.libraryapp.domain.fruit.Fruit;
+import com.group.libraryapp.dto.day2.calculator.request.CalculatorReqeust;
+import com.group.libraryapp.dto.day2.calculator.response.CalculatorResponse;
 import com.group.libraryapp.dto.request.CalculatorAddRequest;
 import com.group.libraryapp.dto.request.CalculatorMultiplyRequest;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,6 +23,11 @@ public class CalculatorController {
     @GetMapping("/add")
     public int addTwoNumbers(CalculatorAddRequest request) {
         return request.getNumber1() + request.getNumber2();
+    }
+
+    @GetMapping("/fruit")
+    public Fruit fruit() {
+        return new Fruit("바나나", 2000);
     }
 
     @PostMapping("/multiply")
