@@ -1,16 +1,10 @@
-package com.group.libraryapp.controller.day4;
+package com.group.libraryapp.controller.day4_6;
 
-import com.group.libraryapp.dto.day4.fruit.request.FruitCreateRequest;
-import com.group.libraryapp.dto.day4.fruit.request.FruitUpdateRequest;
-import com.group.libraryapp.dto.day4.fruit.response.FruitSalesResponse;
-import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.concurrent.atomic.AtomicLong;
 
 @RestController
 public class Day4Controller {
-
+/*
     private final JdbcTemplate jdbcTemplate;
 
     public Day4Controller(JdbcTemplate jdbcTemplate) {
@@ -59,6 +53,6 @@ public class Day4Controller {
         });
 
         return new FruitSalesResponse(salesAmount.get(), notSalesAmount.get());
-    }
+    }*/
 
 }
