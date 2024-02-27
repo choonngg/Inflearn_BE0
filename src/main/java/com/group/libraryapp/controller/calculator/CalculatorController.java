@@ -1,8 +1,5 @@
 package com.group.libraryapp.controller.calculator;
 
-import com.group.libraryapp.domain.fruit.Fruit;
-import com.group.libraryapp.dto.day2.calculator.request.CalculatorReqeust;
-import com.group.libraryapp.dto.day2.calculator.response.CalculatorResponse;
 import com.group.libraryapp.dto.request.CalculatorAddRequest;
 import com.group.libraryapp.dto.request.CalculatorMultiplyRequest;
 import org.springframework.web.bind.annotation.GetMapping;
