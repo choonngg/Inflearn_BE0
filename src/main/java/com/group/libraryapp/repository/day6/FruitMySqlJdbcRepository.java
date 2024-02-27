@@ -9,18 +9,18 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 @Primary
-public class FruitMySqlRepository implements FruitRepository {
+public class FruitMySqlJdbcRepository implements FruitJdbcRepository {
 
     private final JdbcTemplate jdbcTemplate;
 
-    public FruitMySqlRepository(JdbcTemplate jdbcTemplate) {
+    public FruitMySqlJdbcRepository(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }
 
     public void saveFruit(FruitCreateRequest request) {
-        System.out.println("FruitMySqlRepository.saveFruit");
-//        String sql = "INSERT INTO fruit (name, warehousingDate, price) VALUES(?, ?, ?)";
-//        jdbcTemplate.update(sql, request.getName(), request.getWarehousingDate(), request.getPrice());
+//        System.out.println("FruitMySqlRepository.saveFruit");
+        String sql = "INSERT INTO fruit (name, warehousingDate, price) VALUES(?, ?, ?)";
+        jdbcTemplate.update(sql, request.getName(), request.getWarehousingDate(), request.getPrice());
     }
 
     public void updateFruit(FruitUpdateRequest request) {

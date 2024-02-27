@@ -3,15 +3,15 @@ package com.group.libraryapp.controller.day4_6;
 import com.group.libraryapp.dto.day4.fruit.request.FruitCreateRequest;
 import com.group.libraryapp.dto.day4.fruit.request.FruitUpdateRequest;
 import com.group.libraryapp.dto.day4.fruit.response.FruitSalesResponse;
-import com.group.libraryapp.service.day6.FruitService;
+import com.group.libraryapp.service.day6.FruitServiceV2;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 public class FruitController {
 
-    private final FruitService fruitService;
+    private final FruitServiceV2 fruitService;
 
-    public FruitController(FruitService fruitService) {
+    public FruitController(FruitServiceV2 fruitService) {
         this.fruitService = fruitService;
     }
 

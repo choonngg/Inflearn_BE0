@@ -25,10 +25,10 @@ public class CalculatorController {
         return request.getNumber1() + request.getNumber2();
     }
 
-    @GetMapping("/fruit")
-    public Fruit fruit() {
-        return new Fruit("바나나", 2000);
-    }
+//    @GetMapping("/fruit")
+//    public Fruit fruit() {
+//        return new Fruit("바나나", 2000L);
+//    }
 
     @PostMapping("/multiply")
     public int multiplyTwoNumbers(@RequestBody CalculatorMultiplyRequest request) {
